@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <!-- Link the style sheet here -->
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <!-- ... header content ... -->
+    <div class="banner" name="about-header">
+        <h1>Contact Us</h1>
+        If you have questions, it is free to contact us!!!
+    
+    <!-- 核心修改在这里：改为 column -->
+    <div style="display: flex;flex-direction: column; margin:auto">
+        
+        <!-- Person 1 卡片 (调整样式以适应垂直布局) -->
+        <div class="card" style="width: 100%; margin-bottom: 20px; box-shadow: none;">
+        <img class="card-img-top" src="/static/cars.jpeg" alt="Card image">
+        <div class="card-body">
+        <p class="title">car_deal</p>
+        <p>car_deal Customer Service</p>
+        <p class="card-text">Contact me </p>
+        <p>The contact information is at the bottem of page</p>
+    </div>
+</div>
+        <div class="card" style="width: 100%; border: none;"> 
+        <img class="card-img-top" src="/static/contactus.png" alt="Contact Us image">
+        <div class="card-body">
+        <!-- 实际的联系方式可以放在这里 -->
+        <h3 class="mt-4">Our Direct Contact Information</h3>
+        <p><strong>Email:</strong> sales@cardeal.com</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Address:</strong> 101 Dealership Way, Auto City, TX 77001</p>
+        </div>
+    </div>
+</div> 
+</div>
+</div>
+
+</div>
+
+</html>
+
