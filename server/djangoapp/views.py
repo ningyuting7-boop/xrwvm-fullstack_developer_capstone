@@ -120,7 +120,6 @@ def get_dealer_reviews(request, dealer_id):
             review_detail['sentiment'] = response['sentiment']
         return JsonResponse({"status":200,"reviews":reviews})
     else:
-        return JsonResponse({"status":400,"message":"Bad Request"})se:
         return JsonResponse({"status":400,"message":"Bad Request"})  
 
 
@@ -146,5 +145,6 @@ def add_review(request):
         except:
             return JsonResponse({"status":401,"message":"Error in posting review"})
     else:
-        return JsonResponse({"status":403,"message":"Unauthorized"}) add_review(request):
+        return JsonResponse({"status":403,"message":"Unauthorized"}) 
 # ...
+
